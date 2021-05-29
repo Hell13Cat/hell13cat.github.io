@@ -5,7 +5,7 @@ img {
     width: 100%;
 }
 
-@media only screen and (min-width : 721px) {
+@media only screen and (min-width : 801px) {
     body {
         width: 60%;
         margin-left: 20%;
@@ -13,7 +13,7 @@ img {
     }
 }
     
-@media only screen and (max-width : 720px) {
+@media only screen and (max-width : 800px) {
     body {
         width: 100%;
     }
