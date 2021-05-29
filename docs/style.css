@@ -4,3 +4,17 @@ body {
 img {
     width: 100%;
 }
+
+@media only screen and (min-width : 721px) {
+    body {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+    
+@media only screen and (max-width : 720px) {
+    body {
+        width: 100%;
+    }
+}
