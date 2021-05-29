@@ -1,12 +1,32 @@
 body {
     text-align: center;
+    color: white;
+    background-color: indigo;
 }
+
+
 img {
     width: 100%;
 }
 
+ul {
+    list-style-position: inside;
+}
+
+#lista {
+    text-align: left;
+}
+
+#bodydiv {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#maindiv {
+    background-color: black;
+}
 @media only screen and (min-width : 801px) {
-    body {
+    #maindiv {
         width: 60%;
         margin-left: 20%;
         margin-right: 20%;
@@ -14,7 +34,7 @@ img {
 }
     
 @media only screen and (max-width : 800px) {
-    body {
+    #maindiv {
         width: 100%;
         margin-left: 0%;
         margin-right: 0%;
