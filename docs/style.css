@@ -23,6 +23,10 @@ ul {
     height: 100%;
 }
 
+#titlediv {
+    /* NULL */
+}
+
 a {
     color: deeppink; /* Цвет ссылок */
 }
