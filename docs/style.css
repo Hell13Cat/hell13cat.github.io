@@ -24,13 +24,13 @@ ul {
 }
 
 a {
-    color: pink; /* Цвет ссылок */
+    color: deeppink; /* Цвет ссылок */
 }
 a:visited {
     color: purple; /* Цвет посещенных ссылок */
 }
 a:active {
-    color: #ffff00; /* Цвет активных ссылок */
+    color: pink; /* Цвет активных ссылок */
 }
 
 #maindiv {
