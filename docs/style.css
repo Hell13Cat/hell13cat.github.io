@@ -23,7 +23,11 @@ ul {
     height: 100%;
 }
 
-#titlediv {
+.titlediv {
+    /* NULL */
+}
+
+.contentdiv {
     /* NULL */
 }
 
