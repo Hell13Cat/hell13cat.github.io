@@ -12,6 +12,10 @@ summary {
     color: deeppink;
 }
 
+hr {
+    color: #ffffff;
+}
+
 img {
     width: 100%;
 }
@@ -48,7 +52,11 @@ a:active {
     /* NULL */
 }
 
-
+.copyright {
+    bottom: 1em;
+    right: 1em;
+    text-align: center;
+    }
 
 #maindiv {
     background-color: black;
