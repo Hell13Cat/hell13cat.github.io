@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Anime Ace v05"; /* Имя шрифта */
+    font-family: "Anime Ace v05";
     src: local("Anime Ace v05"), url("/fonts/AnimeAce.ttf") format("ttf");
 }
 
@@ -11,15 +11,20 @@ body {
     margin-left: 0px;
     margin-right: 0px;
     background: #000000;
-    background-size: cover;
+    height: 120%;
 }
 
 summary {
     color: deeppink;
 }
 
-hr {
+.hr-v {
     color: #ffffff;
+}
+
+.hr-i {
+    color: rgb(255, 255, 255, 0);
+    height: 1px;
 }
 
 img {
@@ -31,13 +36,13 @@ ul {
 }
 
 a {
-    color: deeppink; /* Цвет ссылок */
+    color: deeppink;
 }
 a:visited {
-    color: purple; /* Цвет посещенных ссылок */
+    color: purple;
 }
 a:active {
-    color: pink; /* Цвет активных ссылок */
+    color: pink;
 }
 
 #lista {
@@ -56,6 +61,36 @@ a:active {
 
 .contentdiv {
     /* NULL */
+}
+
+#card {
+    box-shadow: 4px 4px 4px 0 rgb(255, 255, 255, 1);
+    transition: 0.3s;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 2px;
+}
+#card2 {
+    border: 1px solid #ffffff;
+}
+
+.card-title {
+    padding: 1px 0px 1px 10px;
+    font-family: "Anime Ace v05";
+    font-size: 90%;
+}
+
+.card-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    color: #ffffff;
+    font-family: "Anime Ace v05";
+    font-size: 70%;
+}
+.card-button-block {
+    padding: 5px 0px 5px 5px;
 }
 
 .copyright {
@@ -94,6 +129,7 @@ td, th {
     }
     .homebuttons {
         width: 8%;
+        padding-top: 5px;
     }
     table {
         width: 150px;
@@ -111,6 +147,7 @@ td, th {
     }
     .homebuttons {
         width: 8%;
+        padding-top: 5px;
     }
     table {
         width: 130px;
