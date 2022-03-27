@@ -13,6 +13,7 @@ body {
     background: #000000;
 }
 
+
 .body-index {
     height: 120%;
 }
@@ -25,6 +26,9 @@ body {
     height: 110%;
 }
 
+.body-trans {
+    background: rgb(0, 0, 0, 0.6);
+}
 
 summary {
     color: deeppink;
@@ -119,7 +123,7 @@ a:active {
     }
 
 #maindiv {
-    background-color:  rgba(0, 0, 0, 0.9);
+    background-color:  rgba(0, 0, 0, 0.8);
     margin-top: 0px;
 }
 
@@ -136,6 +140,19 @@ th {
 }
 td, th {
     padding: 2px;
+}
+.sitebuttons {
+    opacity:0.6;
+}
+.sitebuttons:hover {
+    opacity:1;
+}
+
+.homebuttons {
+    opacity:0.6;
+}
+.homebuttons:hover {
+    opacity:1;
 }
 @media only screen and (min-width : 801px) {
     #maindiv {
