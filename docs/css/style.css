@@ -11,8 +11,20 @@ body {
     margin-left: 0px;
     margin-right: 0px;
     background: #000000;
+}
+
+.body-index {
     height: 120%;
 }
+
+.body-project {
+    height: 140%;
+}
+
+.body-firefox {
+    height: 110%;
+}
+
 
 summary {
     color: deeppink;
@@ -79,6 +91,12 @@ a:active {
     padding: 1px 0px 1px 10px;
     font-family: "Anime Ace v05";
     font-size: 90%;
+}
+
+.card-text {
+    padding: 1px 0px 1px 5px;
+    font-family: "Anime Ace v05";
+    font-size: 70%;
 }
 
 .card-button {
