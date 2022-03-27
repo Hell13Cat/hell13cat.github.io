@@ -106,6 +106,7 @@ a:active {
     color: #ffffff;
     font-family: "Anime Ace v05";
     font-size: 70%;
+    cursor: pointer;
 }
 .card-button-block {
     padding: 5px 0px 5px 5px;
