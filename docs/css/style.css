@@ -89,6 +89,7 @@ a:active {
 }
 #card2 {
     border: 1px solid #ffffff;
+    border-radius: 5px;
 }
 
 .card-title {
@@ -111,10 +112,11 @@ a:active {
     font-family: "Anime Ace v05";
     font-size: 70%;
     cursor: pointer;
-    opacity: 1;
+    opacity: 0.7;
+    border-radius: 5px;
 }
 .card-button:hover {
-    opacity:0.8;
+    opacity:1;
 }
 .card-button-block {
     padding: 5px 0px 5px 5px;
@@ -146,7 +148,7 @@ td, th {
     padding: 2px;
 }
 .sitebuttons {
-    opacity:0.6;
+    opacity:0.7;
 }
 .sitebuttons:hover {
     opacity:1;
