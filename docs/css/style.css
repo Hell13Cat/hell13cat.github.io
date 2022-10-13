@@ -16,6 +16,7 @@ body {
 
 .body-index {
     height: 120%;
+    font-family: Roboto, Geneva, Helvetica, Arial, sans-serif;
 }
 
 .body-project {
@@ -72,7 +73,7 @@ a:active {
 }
 
 .titlediv {
-    font-family: "Anime Ace v05";
+    /* NULL */
 }
 
 .contentdiv {
@@ -94,13 +95,11 @@ a:active {
 
 .card-title {
     padding: 1px 0px 1px 10px;
-    font-family: "Anime Ace v05";
     font-size: 90%;
 }
 
 .card-text {
     padding: 1px 0px 1px 5px;
-    font-family: "Anime Ace v05";
     font-size: 70%;
 }
 
@@ -109,7 +108,6 @@ a:active {
     border: 1px solid rgb(255, 255, 255);
     padding: 5px;
     color: #ffffff;
-    font-family: "Anime Ace v05";
     font-size: 70%;
     cursor: pointer;
     opacity: 0.7;
