@@ -104,6 +104,11 @@ a:active {
     font-size: 90%;
 }
 
+.card-title-big {
+    padding: 1px 0px 1px 10px;
+    font-size: 100%;
+}
+
 .card-text {
     padding: 1px 0px 1px 5px;
     font-size: 70%;
