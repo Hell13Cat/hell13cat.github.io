@@ -10,7 +10,7 @@ body {
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    background: rgb(0, 0, 0) url("bg/12.png") 0% 0% / 120%;
+    background: rgb(0, 0, 0) url("/bg/12.png") 0% 0% / 120%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
