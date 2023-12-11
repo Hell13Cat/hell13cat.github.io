@@ -10,10 +10,11 @@ body {
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    background: rgb(0, 0, 0) url("/bg/rain002.jpg") 0% 0% / 120%;
+    background: rgb(0, 0, 0) url("/bg/rain003.jpg") 0% 0% / 120%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    background-size: cover; 
 }
 
 
@@ -135,15 +136,16 @@ a:active {
     margin-bottom: 1px;
 }
 .card-button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
     /* opacity:1;*/
     backdrop-filter: blur(0px);
 }
 .card-button-block {
-    padding: 5px 0px 5px 5px;
+    /* padding: 5px 0px 5px 5px; */
     text-align: center;
 }
 .card-img-block {
-    /* padding: 5px 0px 5px 5px;*/
+    /* padding: 5px 0px 5px 5px; */
     text-align: center;
     width: 98%;
 }
