@@ -1,70 +1,126 @@
-<html>
-    <head>
-        <title>Nyako Page</title>
-        <link rel="stylesheet" href="css/style.css">
-        <meta name="viewport" content="width=device-width">
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-        <link rel="manifest" href="site.webmanifest">
-        <meta property="og:title" content="Nyako Page">
-        <meta property="og:site_name" content="nyako.icu">
-        <meta property="og:url" content="https://nyako.icu/index.html">
-        <meta property="og:description" content="Добро пожаловать к Nyako">
-        <meta property="og:image" content="https://nyako.icu/android-chrome-512x512.png">
-        <!--
-        <meta name="viewport" content="height=device-height">
-        <meta name="viewport" content="user-scalable=yes">
-        -->
-    </head>
-    <body id="page" class="body-index">
-        <div class="body-trans">
-            <div id="maindiv">
-                <img src="img/head2.png" alt="Head Image" style="display: none;">
-                <div id="bodydiv">
-                    <div class="titlediv">
-                        <h2>Добро пожаловать к Nyako</h2>
-                    </div>
-                    <hr class="hr-i">
-                    <div class="card-button-block-head">
-                        <a href="https://github.com/Hell13Cat" target="_blank"><button class="card-button">GitHub</button></a>
-                        <a href="https://www.youtube.com/channel/UCfkXyQ3haC89vB0ad2ul45Q" target="_blank"><button class="card-button">YouTube</button></a>
-                        <a href="https://t.me/Nyako_TW" target="_blank"><button class="card-button">Telegram</button></a>
-                        <a href="discussion.html"><button class="card-button">Обсуждение</button></a>
-                    </div>
-                    <hr class="hr-i">
-                    <div class="contentdiv">
-                        <div id="card2">
-                            <h3 class="card-title-big">Все мои проекты и занятия</h3>
-                        </div>
-                        <hr class="hr-i">
-                        <div id="card2">
-                            <h3 class="card-title">Разработка для браузера</h3>
-                            <p class="card-text">Темы и расширения для Firefox, скрипты с greasyfork.org</p>
-                            <div class="card-button-block">
-                            <a href="firefox.html"><button class="card-button">Подробно</button></a>
-                            </div>
-                        </div>
-                        <hr class="hr-i">
-                        <div id="card2">
-                            <h3 class="card-title">Кодинг</h3>
-                            <p class="card-text">Парсеры, обработчики и пр.</p>
-                            <div class="card-button-block">
-                            <a href="project.html"><button class="card-button">Подробно</button></a>
-                            </div>
-                        </div>
-                        <hr class="hr-i" style="display: none;">
-                        <div id="card2" style="display: none;">
-                            <h3 class="card-title">Ami Higa</h3>
-                            <p class="card-text">Discord бот для аниме культуры</p>
-                            <div class="card-button-block">
-                            <a href="https://amihiga.nyaa.ninja" target="_blank"><button class="card-button">Подробно</button></a>
-                            </div>
-                        </div>
-                        <hr class="hr-i">
-                    </div>
-                </div>
-            </div>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <title>NyaDEV</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="ext/layouts/side-menu/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<script src="js/main.js"></script>
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+    <div id="menu">
+        <div class="pure-menu">
+            <a href="#" class="pure-menu-heading" onclick="nyadev_screen_set('main')" style="background: #aa0101;">NyaDEV</a>
+            <ul class="pure-menu-list">
+                <li class="nyadev_menu_item pure-menu-item" onclick="nyadev_screen_set('firefox')" id="menu_set_firefox">
+                    <a class="pure-menu-link">Firefox</a>
+                </li>
+                <li class="nyadev_menu_item pure-menu-item" onclick="nyadev_screen_set('acc')" style="display: none;" id="menu_set_acc">
+                    <a class="pure-menu-link">Аккаунт</a>
+                </li>
+                <li class="nyadev_menu_item pure-menu-item" onclick="nyadev_screen_set('setting')" style="display: none;" id="menu_set_setting">
+                    <a class="pure-menu-link">Настройки</a>
+                </li>
+                <li class="nyadev_menu_item pure-menu-item" onclick="nyadev_screen_set('about')" id="menu_set_about">
+                    <a class="pure-menu-link">Подробно</a>
+                </li>
+                <li class="nyadev_menu_item pure-menu-item" onclick="nyadev_screen_set(0)" style="display: none;" id="menu_set_4">
+                    <a class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
         </div>
-    </body>
+    </div>
+
+    <div id="page_set_main" class="nyadev_page_ch">
+        <div class="header">
+            <h1 class="nyadev_head_title">NyaDEV</h1>
+            <h2>Основной сайт для проектов Nyako</h2>
+        </div>
+        <div class="content">
+            <h2 class="content-subhead">VT Wiki</h2>
+            <p>
+                Русскоязычная вики по витуберам.
+            </p>
+            <a href="https://w.viryt.xyz" target="_blank"><button class="button_red pure-button">Перейти</button></a>
+        </div>
+        <div class="content">
+            <h2 class="content-subhead">VT Forum</h2>
+            <p>
+                Форум с медиафайлами по витуберам
+            </p>
+            <a href="https://f.viryt.xyz" target="_blank"><button class="button_red pure-button">Перейти</button></a>
+        </div>
+    </div>
+    <div id="page_set_firefox" class="nyadev_page_ch nyadev_hiden">
+        <div class="header">
+            <h1 class="nyadev_head_title">Firefox</h1>
+            <h2>Все проекты для Firefox</h2>
+        </div>
+        <div class="content">
+            <h2 class="content-subhead">Porn Search in Firefox [Расширения]</h2>
+            <p>
+                Поиск на порно сайтах в строке Firefox
+            </p>
+            <a href="datas/ph_0_0_1.xpi" target="_blank"><button class="button_red pure-button">PornHub</button></a>
+            <a href="datas/xv_0_0_1.xpi" target="_blank"><button class="button_red pure-button">XVideos</button></a>
+            <h2 class="content-subhead">Saurei [Тема]</h2>
+            <p><img src="svg/S.svg" alt="Предпросмотр SVG" style="width: 80%;"></p>
+            <a href="https://addons.mozilla.org/ru/firefox/addon/saruei/" target="_blank"><button class="button_red pure-button">Firefox Add-On</button></a>
+            <h2 class="content-subhead">Warframe Light[Тема]</h2>
+            <p><img src="svg/WL.svg" alt="Предпросмотр SVG" style="width: 80%;"></p>
+            <a href="https://addons.mozilla.org/ru/firefox/addon/warframe-light/" target="_blank"><button class="button_red pure-button">Firefox Add-On</button></a>
+            <h2 class="content-subhead">Warframe Orokin[Тема]</h2>
+            <p><img src="svg/WO.svg" alt="Предпросмотр SVG" style="width: 80%;"></p>
+            <a href="https://addons.mozilla.org/ru/firefox/addon/warframe-orokin/" target="_blank"><button class="button_red pure-button">Firefox Add-On</button></a>
+            
+        </div>
+    </div>
+    <div id="page_set_acc" class="nyadev_page_ch nyadev_hiden">
+        <div class="header">
+            <h1 class="nyadev_head_title">Аккаунт</h1>
+            <h2>Ожидайте обновления....</h2>
+        </div>
+    </div>
+    <div id="page_set_setting" class="nyadev_page_ch nyadev_hiden">
+        <div class="header">
+            <h1 class="nyadev_head_title">Настройки</h1>
+            <h2>Ожидайте обновления....</h2>
+        </div>
+    </div>
+    <div id="page_set_about" class="nyadev_page_ch nyadev_hiden">
+        <div class="header">
+            <h1 class="nyadev_head_title">Информация</h1>
+            <h2>Тут информация о кредитах сайта</h2>
+        </div>
+        <div class="content">
+            <h2 class="content-subhead">Внешние ссылки</h2>
+            <p>
+                Тут ссылки на внешние ресурсы автора
+            </p>
+            <a href="https://github.com/Hell13Cat" target="_blank"><button class="button_red pure-button">GitHub</button></a>
+            <a href="https://www.youtube.com/channel/UCfkXyQ3haC89vB0ad2ul45Q" target="_blank"><button class="button_red pure-button">YouTube</button></a>
+            <a href="https://t.me/Nyako_TW" target="_blank"><button class="button_red pure-button">Telegram</button></a>
+        </div>
+        <div class="content">
+            <h2 class="content-subhead">Дизайн</h2>
+            <p>
+                Дизайн сделан на базе Pure CSS.
+            </p>
+            <a href="https://purecss.io" target="_blank"><button class="button_red pure-button">Источник</button></a>
+        </div>
+    </div>
+</div>
+
+<script src="ext/js/ui.js"></script>
+
+</body>
 </html>
