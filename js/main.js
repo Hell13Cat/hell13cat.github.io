@@ -32,3 +32,8 @@ function test(){
         alert(request.responseText);
     };
 }
+
+function get_frarum() {
+    url_getting = "https://f.viryt.xyz/api/discussions";
+    
+}
